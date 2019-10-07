@@ -4,7 +4,7 @@ MAINTAINER Huang Baogui
 ENV SIPP_VERSION 3.6.0
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential curl automake ncurses-dev libsctp-dev libpcap-dev libssl1.0-dev
+    apt-get install -y --no-install-recommends build-essential curl automake ncurses-dev libsctp-dev libpcap-dev libssl-dev
 
 RUN mkdir /build /data && \
     cd /build && \
