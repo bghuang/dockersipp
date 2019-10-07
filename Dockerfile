@@ -11,5 +11,5 @@ RUN mkdir /build /data && \
     curl -sqLkv https://github.com/SIPp/sipp/releases/download/v3.6.0/sipp-3.6.0.tar.gz | tar xvzf - --strip-components=1
 	
 RUN cd /build && \
-    ./build.sh --with-openssl --with-pcap --with-rtpstream --with-sctp && \
+    ./build.sh --all && \
     mv sipp /usr/bin
