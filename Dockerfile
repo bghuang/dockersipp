@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM ubuntu:18.04
 
 MAINTAINER Huang Baogui
 ENV SIPP_VERSION 3.6.0
