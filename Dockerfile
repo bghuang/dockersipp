@@ -8,7 +8,7 @@ RUN apt-get update && \
 
 RUN mkdir /build /data && \
     cd /build && \
-    curl -sqLkv https://github.com/SIPp/sipp/releases/download/v3.6.0/sipp-3.6.0.tar.gz | tar xvzf - --strip-components=1
+    curl -sqLkv https://github.com/SIPp/sipp/releases/download/v${SIPP_VERSION}/sipp-${SIPP_VERSION}.tar.gz | tar xvzf - --strip-components=1
 	
 RUN cd /build && \
     ./build.sh --full && \
